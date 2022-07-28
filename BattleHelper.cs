@@ -38,5 +38,27 @@ namespace HeroBattle
             }
             return null;
         }
+
+        public static int GetGameType(string question)
+        {
+            // 1 - 1X1 2 - 2X2
+            int result = 0;
+
+            do
+            {
+                Console.WriteLine(question);
+                var response = Console.ReadLine();
+                if(response == "1" || response == "2" )
+                {
+                    result = int.Parse(response);
+                }
+                else
+                {
+                    result = 0;
+                }
+            } while (result == 0);
+
+            return result;
+        }
     }
 }
