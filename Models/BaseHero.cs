@@ -1,5 +1,6 @@
 ﻿using System;
 using HeroBattle.Services;
+using HeroBattle.Models;
 
 namespace HeroBattle.Models
 {
@@ -54,6 +55,14 @@ namespace HeroBattle.Models
         public override string ToString()
         {
             return "Base Hero";
+        }
+
+        public static BaseHero operator + (BaseHero hero1, BaseHero hero2) {
+            return new UnknownHero {
+                Armor = hero1.Armor + hero2.Armor,
+                Damage = hero1.Damage + hero2.Damage,
+                HealthPoint = hero1.HealthPoint + hero2.HealthPoint,
+            };
         }
     }
 }
