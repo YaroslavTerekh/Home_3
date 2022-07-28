@@ -34,5 +34,15 @@ namespace HeroBattle
                 Console.WriteLine("No winners");
             }
         }
+
+        private static BaseHero operator + (BaseHero hero1, BaseHero hero2)
+        {
+            return new BaseHero()
+            {
+                Armor = hero1.Armor + hero2.Armor,
+                Damage = hero1.Damage + hero2.Damage,
+                HealthPoint = hero1.HealthPoint + hero2.HealthPoint,
+            }
+        }
     }
 }
