@@ -1,0 +1,7 @@
+C:\Users\Home\Desktop\HeroBattle-master\HeroBattle\bin\Debug\HeroBattle.exe
+C:\Users\Home\Desktop\HeroBattle-master\HeroBattle\bin\Debug\HeroBattle.pdb
+C:\Users\Home\Desktop\HeroBattle-master\HeroBattle\obj\Debug\HeroBattle.csproj.AssemblyReference.cache
+C:\Users\Home\Desktop\HeroBattle-master\HeroBattle\obj\Debug\HeroBattle.csproj.SuggestedBindingRedirects.cache
+C:\Users\Home\Desktop\HeroBattle-master\HeroBattle\obj\Debug\HeroBattle.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\HeroBattle-master\HeroBattle\obj\Debug\HeroBattle.exe
+C:\Users\Home\Desktop\HeroBattle-master\HeroBattle\obj\Debug\HeroBattle.pdb

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+         <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{883EFEAF-0F39-4AAB-8709-C42C51F77620}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HeroBattle</RootNamespace>
+    <AssemblyName>HeroBattle</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuperPowerGenerator.cs" />
+    <Compile Include="Models\BaseHero.cs" />
+    <Compile Include="Models\Heros\SpiderMan.cs" />
+    <Compile Include="Models\Heros\IronMan.cs" />
+    <Compile Include="Models\Heros\Tor.cs" />
+    <Compile Include="Models\Heros\CapitanAmerica.cs" />
+    <Compile Include="Services\ISuperPowerService.cs" />
+    <Compile Include="Services\Implementations\HPSuperPowerService.cs" />
+    <Compile Include="Services\Implementations\ArmorSuperPowerService.cs" />
+    <Compile Include="Services\Implementations\DamageSuperPowerService.cs" />
+    <Compile Include="Battle.cs" />
+    <Compile Include="BattleHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\Heros\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Implementations\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
